@@ -1,0 +1,24 @@
+{
+  "name": "crudbasico-backend",
+  "version": "1.0.0",
+  "description": "primer proyecto backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "dev": "nodemon --exec npm run babel-node src/index.js"
+  },
+  "author": "sebalc",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  }
+}
