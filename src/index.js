@@ -2,7 +2,10 @@ import express from 'express'; //const express = require('express');
 import morgan from 'morgan';
 import cors from 'cors';
 import path from 'path';
+import productoRouter from './routes/productos.routes';
+import './database';
 
+//settings
 const app = express(); //estoy creando así una instancia de express.
 // configuración del puerto
 app.set('port', process.env.PORT || 4000)
@@ -23,11 +26,4 @@ app.use(express.urlencoded({ extended:true }));
 app.use(express.static(path.join(__dirname, "../public")));
 
 //ruta
-//GET
-app.get('/', (req, res) => { //require y response
-  res.send('hola mundo :)')
-})
-
-app.get('/usuarios', (req, res) => {
-  res.send('Estoy en la página de usuarios')
-})
+app.use('/api/cafeteria', productoRouter);
