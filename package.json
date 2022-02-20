@@ -4,9 +4,8 @@
   "description": "primer proyecto backend",
   "main": "index.js",
   "scripts": {
-    "babel-node": "babel-node --presets=env",
     "start": "babel-node src/index.js",
-    "dev": "nodemon --exec npm run babel-node src/index.js"
+    "dev": "nodemon babel-node src/index.js"
   },
   "author": "sebalc",
   "license": "ISC",
