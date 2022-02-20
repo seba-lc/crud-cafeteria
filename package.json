@@ -4,23 +4,21 @@
   "description": "primer proyecto backend",
   "main": "index.js",
   "scripts": {
-    "babel-node": "babel-node --presets=@babel/preset-env",
-    "start": "nodemon --exec npm run babel-node src/index.js",
+    "babel-node": "babel-node --presets=env",
+    "start": "babel-node src/index.js",
     "dev": "nodemon --exec npm run babel-node src/index.js"
   },
   "author": "sebalc",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "mongoose": "^6.2.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.3",
-    "@babel/core": "^7.17.5",
-    "@babel/node": "^7.16.8",
-    "@babel/preset-env": "^7.16.11",
     "nodemon": "^2.0.15"
   }
 }
