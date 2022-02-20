@@ -9,7 +9,7 @@
 
 import mongoose from 'mongoose';
 
-const url = 'mongodb://localhost:27017/cafeteria';
+const url = 'mongodb+srv://seba-lc:pepperonilc@rolling.z5olm.mongodb.net/test';
 
 mongoose.connect(url)
 
